@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alsan Khadka - Portfolio</title>
+    <!-- Bootstrap CSS framework for layout and components -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Custom stylesheet for extra styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar (sticky at top with links to sections) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Brand/Logo -->
+            <a class="navbar-brand" href="#">Alsan Khadka</a>
+            <!-- Toggler button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapsible nav links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Navigation menu items -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Welcome Section -->
+    <section id="home" class="min-vh-100 d-flex align-items-center justify-content-center text-white text-center pt-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4 animate-fade-in">Welcome to My Portfolio</h1>
+            <p class="lead mb-4">Full Stack Developer | Crafting Dynamic Web Experiences</p>
+            <a href="#about" class="btn btn-light btn-lg">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="c:\Users\Dell\Desktop\shared image.jfif" alt="Alsan Khadka" 
+                    class="rounded-circle img-fluid shadow" style="width: 200px; height: 200px; object-fit: cover;">
+                </div>
+                <div class="col-md-8">
+                    <p class="text-center text-md-start">Hi, I'm Alsan Khadka, 
+                        a junior full-stack developer passionate about creating responsive and user-friendly web applications.
+                         I specialize in HTML, CSS, JavaScript, and I'm diving into modern frameworks like  Node.js and database MySQL.
+                          Currently studying at the University of Sunderland, I'm excited to bring my skills to real-world projects and
+                           continuously learn new technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">My Skills</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>HTML</h5>
+                    <div class="progress">
+                        <div class="skill-bar progress-bar bg-primary" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>CSS</h5>
+                    <div class="progress">
+                        <div class="skill-bar progress-bar bg-primary" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>JavaScript</h5>
+                    <div class="progress">
+                        <div class="skill-bar progress-bar bg-primary" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Node.js</h5>
+                    <div class="progress">
+                        <div class="skill-bar progress-bar bg-primary" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>MySQL</h5>
+                    <div class="progress">
+                        <div class="skill-bar progress-bar bg-primary" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">My Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Booking Form</h5>
+                            <a href="../../Booking app/booking.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Simple Calculator</h5>
+                            <a href="../../calculator/calculator.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Simple Clock</h5>
+                            <a href="../../clock/clock.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">My Hobbies</h2>
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="hobby-card card shadow-sm text-center">
+                        <div class="card-body">
+                            <p class="font-medium">Photography</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="hobby-card card shadow-sm text-center">
+                        <div class="card-body">
+                            <p class="font-medium">Traveling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="hobby-card card shadow-sm text-center">
+                        <div class="card-body">
+                            <p class="font-medium">Chess</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="hobby-card card shadow-sm text-center">
+                        <div class="card-body">
+                            <p class="font-medium">Coding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <ul class="list-unstyled">
+                <li class="mb-3 border-bottom pb-2">
+                    <strong>What technologies do you specialize in?</strong>
+                    <p>I specialize in web development technologies like HTML, CSS, and JavaScript, with growing expertise in Node.js and database MySQL.</p>
+                </li>
+                <li class="mb-3 border-bottom pb-2">
+                    <strong>How can I contact you?</strong>
+                    <p>You can reach out through the Contact form or via my email at alsankhadka18@gmail.com.</p>
+                </li>
+                <li class="mb-3 border-bottom pb-2">
+                    <strong>Are you open to freelance opportunities?</strong>
+                    <p>Yes, I am open to freelance opportunities. Feel free to contact me for more details.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <form id="contact-form" novalidate>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" aria-describedby="nameError" required>
+                                    <div id="nameError" class="invalid-feedback"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="your.email@example.com" aria-describedby="emailError" required>
+                                    <div id="emailError" class="invalid-feedback"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" aria-describedby="subjectError" required>
+                                    <div id="subjectError" class="invalid-feedback"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message" aria-describedby="messageError" required></textarea>
+                                    <div id="messageError" class="invalid-feedback"></div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Alsan Khadka. All rights reserved.</p>
+            <div>
+                <a href="https://github.com/AlsanKhadka" class="text-white mx-2">GitHub</a>
+                <a href="https://www.linkedin.com/in/alsan-khadka-989167340/" class="text-white mx-2">LinkedIn</a>
+                <a href="https://x.com/KhadkaAlsa69875" class="text-white mx-2">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Message Sent!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for your message. I'll get back to you soon!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div class="modal fade" id="errorModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Error</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="errorModalBody"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
