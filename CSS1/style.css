@@ -1,0 +1,115 @@
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+    100% { left: 100%; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sections with Scroll Offset */
+section {
+    scroll-margin-top: 70px; /* Offset for fixed navbar (~60px) + extra margin (10px) */
+}
+
+/* Hero Section */
+#home {
+    background: #3b82f6; /* Static blue background */
+}
+
+/* Navbar */
+nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Sections Background */
+section:not(#home) {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" opacity="0.05"><circle cx="50" cy="50" r="2" fill="%23999999"/></svg>');
+}
+
+/* Cards */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills */
+.progress-bar {
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: shimmer 2s infinite;
+}
+
+/* Links */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #3b82f6;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Hobby Cards */
+.hobby-card {
+    transition: transform 0.3s ease;
+}
+
+/* Form Inputs */
+.form-control:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+/* Modals */
+.modal-content {
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #home { padding: 60px 0; }
+    #home h1 { font-size: 2rem; }
+    #about img { width: 50%; max-width: 160px; }
+    section { scroll-margin-top: 80px; } /* Adjust for mobile navbar height */
+}
